@@ -1,0 +1,1 @@
+def masukan_berat_badan(kg)
