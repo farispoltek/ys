@@ -1,4 +1,4 @@
-faris : a = 10
+a = 10
 b = 5
 print(f'Hasil Penjumlahan : {a+b}')
 print(f'Hasil Pengurangan : {a-b}')

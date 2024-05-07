@@ -1,20 +1,15 @@
-def hitung_total_harga(daftar_harga):
-    total = sum(daftar_harga)
-    return total 
+def kabisat(n):
+    if n % 400 == 0:
+        return True
+    if n % 100 == 0:
+        return False
+    if n % 4 == 0:
+        return True
+    else:
+        return False
+tahun =int(input("masukan tahun: "))
 
-def main():
-    daftar_harga = [1000, 2000]
-    int(input("kopi, susu: "))
-
-    
-for i in range(3):
-    float(input("1000 ke-{}: ".format(i+1)))
-
-for i in range(3):
-    float(input("2000 ke-{}: ".format(i+2)))
-
-total_harga = hitung_total_harga(daftar_harga)
-print("total harga dari{kopi, susu,} barang adalah: Rp 3000 {: .2f}".format(jumlah_barang, total_harga))
-
-if __name__ == "__main__":
-    main()
+if kabisat(tahun):
+    print(tahun, "ini tahun kabisat")
+else:
+    print(tahun, "ini bukan tahun kabisat")
