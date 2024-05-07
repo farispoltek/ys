@@ -1,12 +1,15 @@
-def cek_tahun_kabisat(tahun):
-    if (tahun % 400 == 0):
+def kabisat(n):
+    if n % 400 == 0:
+        return True
+    if n % 100 == 0:
+        return False
+    if n % 4 == 0:
         return True
     else:
         return False
-    
-    int(input("2024,"))
+tahun =int(input("masukan tahun: "))
 
-if cek_tahun_kabisat(2024):
-    print(2024,"adalah tahun kabisat.")
+if kabisat(tahun):
+    print(tahun, "ini tahun kabisat")
 else:
-    print(2024,"bukan tahun kabisat.")
+    print(tahun, "ini bukan tahun kabisat")

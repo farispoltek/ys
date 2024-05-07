@@ -1,15 +1,14 @@
-def kabisat(n):
-    if n % 400 == 0:
-        return True
-    if n % 100 == 0:
-        return False
-    if n % 4 == 0:
-        return True
-    else:
-        return False
-tahun =int(input("masukan tahun: "))
+def hitung_total(harga_barang):
+    total_harga = sum(harga_barang)
+    return total_harga
 
-if kabisat(tahun):
-    print(tahun, "ini tahun kabisat")
-else:
-    print(tahun, "ini bukan tahun kabisat")
+jumlah_barang = int(input("Masukkan jumlah barang: "))
+
+harga_barang = []
+for i in range(jumlah_barang):
+    harga = float(input(f"Masukkan harga barang ke-{i+1}: "))
+    harga_barang.append(harga)
+
+total_harga = hitung_total(harga_barang)
+
+print(f"Total belanjaan: Rp {total_harga}")
